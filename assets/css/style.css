@@ -1,0 +1,1412 @@
+/* Reset Css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset CSS End */
+
+/* Root Css Start*/
+:root{
+    --primary:#ffefd5;
+    --secondary: #b75a74;
+    --footer-bg:#29141a;
+    --txt-white:#ffffff;
+    --txt-gray: #000000;
+}
+/* Root Css End */
+
+/* Body CSS Start */
+body{
+    color: var(--primary);
+    font-family: 'Montserrat-Bold',sans-serif;
+    position: relative
+}
+html, body {
+    overflow-x: hidden;
+}
+/* Body CSS End */
+
+/* Link css */
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* Link css end */
+
+/* Font-Face Start */
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    font-display: swap;
+    
+}
+
+/* Font-Face End */
+
+/* Overflow */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Container */
+.container{
+    max-width: 1760px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Columns */
+.col-1 {
+    width: 8.33333333%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.6%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-12 {
+    width: 100%;
+}
+/* Columns End */
+
+/* Font-size Start */
+.font-104{
+    font-size: 104px;
+}
+.font-100{
+    font-size: 100px;
+}
+.font-85{
+    font-size: 85px;
+}
+.font-83{
+    font-size: 83px;
+}
+.font-56{
+    font-size: 56px;
+}
+.font-47{
+    font-size: 47px;
+}
+.font-43{
+    font-size: 43px;
+}
+.font-42{
+    font-size: 42px;
+}
+.font-40{
+    font-size: 40px;
+}
+.font-37{
+    font-size: 37px;
+}
+.font-34{
+    font-size: 34px;
+}
+.font-33{
+    font-size: 33px;
+}
+.font-32{
+    font-size: 32px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-25{
+    font-size: 25px;
+}
+.font-22{
+    font-size: 22px;
+}
+
+/* Font-size End */
+
+/* Font-weight */
+.fw-600{
+    font-weight: 600;
+}
+
+/* Colors */
+.txt-primary{
+    color: var(--primary);
+}
+.txt-secondary{
+    color: var(--secondary);
+}
+.txt-white{
+    color: var(--txt-white);
+}
+.txt-gray{
+    color: var(--txt-gray);
+}
+/* Colors End */
+
+/* Display */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+/* Display End */
+
+/* Section common css */
+section,footer{
+    min-height: 100vh;
+    padding: 50px 0;
+}
+/* Position */
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+.position-fixed{
+    position: fixed;
+}
+.sticky{
+    background: var(--secondary);
+    width: 100%;
+}
+.shadow{
+    filter: drop-shadow(0px 5px 5px rgba(25,45,51,0.15));
+}
+
+.img-fluid{
+    max-width: 60%;
+    height: auto;
+}
+ .top-68{
+    padding-top: 68px;
+ }
+ .top-0{
+    padding-top: 0;
+ }
+/* Position End */
+
+/* list-style none */
+
+.list-style-none {
+    list-style: none;
+}
+
+/* img */
+img:not(.logo img) {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* text-center */
+.text-center {
+    text-align: center;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.txt-uppercase{
+    text-transform: uppercase;
+}
+
+/* Padding Start */
+.pt-129{
+    padding-top: 129px;
+}
+.pt-111{
+    padding-top: 111px;
+}
+.pt-90{
+    padding-top: 90px;
+}
+.pt-68{
+    padding-top: 68px;
+}
+.pb-97{
+    padding-bottom: 97px;
+}
+.pb-84{
+    padding-bottom: 84px;
+}
+.pb-82{
+    padding-bottom: 82px;
+}
+.pb-77{
+    padding-bottom: 77px;
+}
+.pb-72{
+    padding-bottom: 72px;
+}
+.pb-30{
+    padding-bottom: 30px;
+}
+.pl-150{
+    padding-left: 150px;
+}
+.pl-39{
+    padding-left: 39px;
+}
+.pr-90{
+    padding-right: 90px;
+}
+.px-23{
+    padding-top: 23px;
+    padding-bottom: 22px;
+}
+.p-10{
+    padding: 10px;
+}
+/* Padding End */
+
+/* Margin start */
+.mx-auto{
+    margin: 0 auto;
+}
+/* Margin end */
+
+/* Font-family */
+.ff-montserrat-regular{
+    font-family: 'Montserrat-Regular',sans-serif;
+}
+/* Gap */
+.gap-180{
+    gap: 180px;
+}
+.gap-170{
+    gap: 170px;
+}
+.gap-126{
+    gap: 126px;
+}
+.gap-116{
+    gap: 116px;
+}
+.gap-65{
+    gap: 65px;
+}
+.gap-50{
+    gap: 50px;
+}
+.gap-26{
+    gap: 26px;
+}
+.gap-22{
+    gap: 22px;
+}
+.z-99{
+    z-index: 99;
+}
+.z-1{
+    z-index: 1;
+}
+
+/* Main Css start */
+
+/* Header Section */
+.hero-section{
+    background: url(../images/hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hover-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width .3s;
+}
+  
+.hover-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.topnav li a:hover{
+    color: var(--txt-white);
+}
+.btn-primary{
+    background: var(--primary);
+    border-radius: 43px;
+    padding: 22px 87px;
+    border: 5px solid var(--primary);
+
+}
+.btn-primary:hover{
+    background: var(--secondary);
+    color: var(--primary);
+    border: 5px solid var(--primary);
+    cursor: pointer;
+}
+#check1 {
+    display: none;
+}
+.checkbtn1 {
+    display: none;
+}
+.fixed-border{
+    border-bottom: 1px solid #faf5e4;
+    transition: .5s;
+}
+/* Header Section End */
+
+/* Our Team Section Start */
+.our-team{
+    background: var(--primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-team .team-portfolio .team-wrapper-1 img,.our-team .team-portfolio .team-wrapper-2 img,.our-team .team-portfolio .team-wrapper-3 img,.time-to-hike .img-txt-wrapper img,.tour-guide .img-txt-wrapper img{
+    border-radius: 50%;
+}
+.our-team::before{
+    content: '';
+    width: 197px;
+    height: 261px;
+    background: url(../images/t-shape-5.svg);
+    position: absolute;
+    top: -35px;
+    left: 147px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.our-team::after{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/t-shape-2.svg);
+    position: absolute;
+    top: 82px;
+    right: 106px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.team-wrapper-1::before{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/t-shape-1.svg);
+    position: absolute;
+    bottom: 95px;
+    left: -95px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.shape-hide{
+	width: 1716px;
+    height: 1430px;
+    top: calc(100% - 565px);
+    right: calc(100% - 588px);
+}
+.shape-hide-1{
+	width: 1340px;
+    height: 1144px;
+    top: calc(100% - 400px);
+    left: calc(100% - 562px);
+}
+.shape-hide-2{
+    width: 175px;
+    height: 169px;
+    bottom: 275px;
+    right: -20px;
+}
+.svg-icons{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* Our Team Section End */
+
+/* Time to hike Start */
+.time-to-hike{
+    background: var(--secondary);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.time-to-hike::before{
+    content: '';
+    width: 212px;
+    height: 178px;
+    background: url(../images/t-shape-4.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -60px;
+    background-repeat: no-repeat;
+
+}
+.time-to-hike::after{
+    content: '';
+    width: 131px;
+    height: 152px;  
+    background: url(../images/h-shape-1.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 77px;
+    left: 93px;
+}
+
+.time-to-hike .text-wrapper::before{
+    content: '';
+    width: 197px;
+    height: 261px;
+    background: url(../images/t-shape-5.svg);
+    position: absolute;
+    top: -35px;
+    right: 147px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Time to hike End */
+
+/* Statisitcs start */
+.statistics{
+    background: var(--primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.count-1{
+    border: 6px solid var(--secondary);
+    border-radius: 50%;
+    width: 366px;
+    height: 367px;
+}
+.statistics::before{
+    content: '';
+    width: 175px;
+    height: 169px;
+    background: url(../images/t-shape-3.svg);
+    position: absolute;
+    left: 70%;
+    transform: translate(-50%, 0);
+    top: -78px;
+    background-repeat: no-repeat;
+}
+.statistics::after{
+    content: '';
+    width: 212px;
+    height: 188px;
+    background: url(../images/s-shape-1.svg);
+    position: absolute;
+    left: 99px;
+    top: 110px;
+    background-repeat: no-repeat;
+}
+.chef-counts::before{
+    content: '';
+    width: 133px;
+    height: 152px;
+    background: url(../images/s-shape-2.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.shape-hide-3{
+    width: 1458px;
+    height: 1507px;
+    bottom: calc(100% - 580px);
+    right: calc(100% - 475px);
+}
+.shape-hide-4{
+    width: 1290px;
+    height: 1076px;
+    top: calc(100% - 480px);
+    left: calc(100% - 467px);
+}
+/* Statisitcs end */
+
+/* Tour-Guide Start */
+.tour-guide{
+    background: var(--secondary);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tour-guide::before{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/s-shape-4.svg);
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%, 0);
+    top: -78px;
+    background-repeat: no-repeat;
+}
+.tour-guide::after{
+    content: '';
+    width: 280px;
+    height: 253px;
+    background: url(../images/s-shape-3.svg);
+    position: absolute;
+    left: 76%;
+    transform: translate(-50%, 0);
+    top: -50px;
+    background-repeat: no-repeat;
+}
+.shape-hide-5{
+    width: 133px;
+    height: 152px;
+    top: 528px;
+    left: -25px;
+}
+.shape-hide-6{
+    width: 175px;
+    height: 169px;
+    top: 589px;
+    right: -40px;
+}
+/* Tour-Guide End */
+
+/* Go-with-us Start */
+.go-with-us{
+    background: url(../images/go-with-us.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.go-with-us::before{
+    content: '';
+    width: 212px;
+    height: 188px;
+    background: url(../images/s-shape-1.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -105px;
+    background-repeat: no-repeat;
+}
+.shape-hide-7{
+    width: 175px;
+    height: 169px;
+    top: 150px;
+    left: -20px;
+}
+.shape-hide-8{
+    width: 280px;
+    height: 253px;
+    top: 513px;
+    right: -45px;
+}
+/* Go-with-us End */
+
+/* subscribe start */
+.subscribe{
+    background: var(--primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.btn-secondary{
+    background: var(--secondary);
+    border-radius: 43px;
+    padding: 27px 48px;
+    margin-left: -50px;
+}
+.btn-secondary:hover{
+    cursor: pointer;
+}
+.btn-grp input{
+    border-radius: 43px 0 0 43px;
+    border: 0;
+}
+.btn-grp input::placeholder{
+    color: var(--txt-gray);
+    opacity: 0.502;
+}
+.subscribe::before{
+    content: '';
+    width: 253px;
+    height: 196px;
+    background: url(../images/s-shape-4.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -50px;
+    background-repeat: no-repeat;
+}
+.subscribe::after{
+    content: '';
+    width: 197px;
+    height: 261px;
+    background: url(../images/t-shape-5.svg);
+    position: absolute;
+    left: 83px;
+    top: 367px;
+    background-repeat: no-repeat;
+
+}
+.shape-hide-9{
+    width: 1290px;
+    height: 1076px;
+    top: calc(100% - 630px);
+    right: calc(100% - 465px);
+}
+.shape-hide-10{
+    width: 1079px;
+    height: 971px;
+    bottom: calc(100% - 500px);
+    left: calc(100% - 450px);
+}
+.shape-hide-11{
+    width: 132px;
+    height: 152px;
+    top: 605px;
+    right: 109px;
+}
+/* subscribe end */
+
+/* Footer Start */
+.footer{
+    background: var(--footer-bg);
+    height: 100vh;
+}
+.txt-capitalize{
+    text-transform: capitalize;
+}
+.link-social{
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.link-social:hover {
+    transform: rotateY(360deg);
+    transition:1.5s;
+}
+
+.fa-brands{
+    color: #29141A;
+    font-size: 30px;
+}
+
+.footer-links p a:hover{
+    text-decoration: underline;
+}
+.whitespace-nowrap{
+    white-space: nowrap;
+}
+.footer::before{
+    content: '';
+    width: 280px;
+    height: 253px;
+    background: url(../images/s-shape-3.svg);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: -90px;
+    background-repeat: no-repeat;
+}
+/* Footer End */
+
+/* Fotawsome css */
+.fa-brands{
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Css start */
+/* @media screen and (min-width: 1950px) {
+    .shape-hide{
+        height: 100%;
+        width: 100%;
+    }   
+    .shape-hide img{
+        position: absolute;
+        left: 25%;
+    }
+} */
+
+@media screen and (max-width: 1200px) {
+        .flex-lg{
+            display: flex;
+        }
+        .flex-lg-col{
+            flex-direction: column;
+        }
+        .flex-lg-col-rev{
+            flex-direction: column-reverse;
+        }
+        .justify-center-lg{
+            justify-content: center;
+        }
+        .align-start-lg{
+            align-items: flex-start;
+        }
+        .col-lg-11{
+            width: 91.66%;
+        }
+        .col-lg-10{
+            width: 83.33%;
+        }
+        .col-lg-8{
+            width: 66.66%;
+        }
+        .col-lg-4{
+            width: 33.33%;           
+        }
+        .col-lg-3{
+            width: 25%;
+        }
+        .gap-180 {
+            gap: 50px;
+        }
+        .gap-170 {
+            gap: 70px;
+        }
+        .gap-126 {
+            gap: 50px;
+        }
+        .gap-116 {
+            gap: 50px;
+        }
+        .gap-lg-50{
+            gap: 50px;
+        }
+        .img-col-lg-6{
+            max-width: 60%;
+        }
+        .top-68{
+            padding-top: 0px;
+        }
+        .pt-90 {
+            padding-top: 70px;
+        }
+        .pt-68 {
+            padding-top: 40px;
+        }
+        .pb-97,.pb-84,.pb-77,.pb-72{
+            padding-bottom: 40px;
+        }
+        .pl-150{
+            padding-left: 50px;
+        }
+        .font-104 {
+            font-size: 70px;
+        }
+        .font-100 {
+            font-size: 70px;
+        }
+        .font-85 {
+            font-size: 65px;
+        }   
+        .font-56 {
+            font-size: 46px;
+        }
+        .font-47 {
+            font-size: 40px;
+        }
+        .font-43 {
+            font-size: 35px;
+            line-height: 1.3;
+        }
+        .font-42 {
+            font-size: 30px;
+        }
+        .font-40 {
+            font-size: 25px;
+            line-height: 1.3;
+        }
+        .font-37 {
+            font-size: 30px;
+        }
+        .font-34 {
+            font-size: 25px;
+        }
+        .font-33 {
+            font-size: 20px;
+        }
+        .font-32 {
+            font-size: 22px;
+            line-height: 1.3;
+        }
+        .font-30{
+            font-size: 20px;
+        }
+        .font-22 {
+            font-size: 20px;
+        }
+        .btn-primary{
+            padding: 15px 50px;
+        }
+        .container{
+            padding: 0 15px;
+        }
+        .text-center-lg{
+            text-align: center;
+        }
+        .shape-hide-2{
+            width: 150px;
+            height: 150px;
+        }
+        .team-wrapper-1::before{
+            z-index: -1;
+        }
+        .our-team::before{
+            left: 55px;
+            width: 120px;
+            height: 160px;
+        }
+        .our-team::after{
+            top: 35px;
+            right: 35px;
+            width: 150px;
+            height: 115px;
+        }
+        .flex-lg-wrap{
+            flex-wrap: wrap;
+        }
+        .time-to-hike::before{
+            width: 120px;
+            height: 160px;
+            background-size: contain;
+            top: -45px;
+        }
+        .time-to-hike .text-wrapper::before{
+            right: 50px;
+            width: 120px;
+            height: 160px;
+        }
+        .tour-guide::before{
+            width: 150px;
+            height: 115px;
+            background-size: cover;
+        }
+        .tour-guide::after{
+            width: 150px;
+            height: 115px;
+            background-size: contain;
+        }
+        .go-with-us::before{
+            top: -40px;
+        }
+        .shape-hide-7{
+            top: 35px;
+        }
+        .subscribe::after{
+            left: 43px;
+        }
+        .shape-hide-11{
+            width: 100px;
+            height: 115px;
+        }
+        .go-with-us{
+            background-position: center;
+            opacity: 0.7;
+        }
+        .mx-lg-auto{
+            margin: 0 auto;
+        }
+        .footer .main-footer-wrapper{
+            justify-content: center;
+        }
+        section{
+            min-height: auto;
+        }
+        .go-with-us,.hero-section,.subscribe{
+            min-height: 70vh;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .main-footer-wrapper > :nth-child(1){
+            order: 3;
+        }
+}
+
+@media screen and (max-width: 1024px) {
+    .hover-link:hover::after {
+       content: none;
+    }
+    .fa-btn {
+        z-index: 99;
+        position: absolute;
+        right: 0;
+    }
+    .checkbtn1 {
+        display: block;
+        z-index: 99;
+        font-size: larger;
+    }
+    .topnav {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--secondary);
+        top: 0;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 99;
+        padding: 80px 0 ;
+    }
+    .topnav, .topnav li a {
+        display: block;
+        margin: 0 auto;
+        color: var(--primary);
+        z-index: 9;
+        cursor: pointer;
+    }
+    .topnav li a {
+        padding: 20px;
+    }
+    .fa.fa-bars,.fa.fa-xmark {
+        font-size: 31px;
+        padding: 18px;
+    }
+    .navbar .topnav, .topnav li a {
+        font-size: 20px;
+        color: var(--primary);
+    }
+    .img-fluid{
+        width: 60%;
+    }
+    #check1:checked~.topnav {
+        right: 0;
+    }
+    .our-team::before,.our-team::after,.team-wrapper-1::before,.svg-icons>*,.time-to-hike::before,.time-to-hike::after,.time-to-hike .text-wrapper::before,.statistics::before,.statistics::after,.chef-counts::before,.tour-guide::before,.tour-guide::after,.go-with-us::before,.subscribe::before,.subscribe::after,.footer::before{
+        content: none;
+        display: none;
+    }   
+    .col-md-3{
+        width: 25%;
+    }
+    .btn-primary{
+        padding: 15px 35px;;
+    }
+    .pt-129 {
+        padding-top: 50px;
+    }
+    .pb-97, .pb-84, .pb-77, .pb-72 {
+        padding-bottom: 30px;
+    }
+    .lh-1-3{
+        line-height: 1.3;
+    }
+    .font-104 {
+        font-size: 50px;
+    }
+    .font-100 {
+        font-size: 50px;
+    }
+    .font-85 {
+        font-size: 50px;
+    }
+    .font-83 {
+        font-size: 50px;
+    }
+    .font-56 {
+        font-size: 35px;
+    }   
+    .font-47 {
+        font-size: 35px;
+    }
+     .font-43 {
+        font-size: 30px;
+    }
+    .font-40 {
+        font-size: 20px;
+    }
+    .font-37 {
+        font-size: 25px;
+    }
+    .font-34 {
+        font-size: 20px;
+    }
+    .font-22 {
+        font-size: 17px;
+    }
+    .go-with-us, .hero-section, .subscribe {
+        min-height: 50vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .count-1{
+        width: 210px;
+        height: 220px;
+    }
+    .gap-170 {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .col-md-12{
+        width: 100%;
+    }
+    .col-md-10{
+        width: 83.33%;
+    }
+    .col-md-4{
+        width: 33.33%;
+    }
+    .col-md-5{
+        width: 50%;
+    }
+    .mx-auto-md{
+        margin: 0 auto;
+    }
+    .text-center-md{
+        text-align: center;
+    }
+    .flex-md-wrap{
+        flex-wrap: wrap;
+    }
+    .flex-md-col{
+        flex-direction: column;
+    }
+    .align-center-md{
+        align-items: center;
+    }
+    .footer-border{
+        border-bottom: 3px solid var(--primary);
+    }
+    .count-1{
+        width: 180px;
+        height: 180px;
+    }
+    .gap-170 {
+        gap: 30px;
+    }
+    .font-104 {
+        font-size: 30px;
+    }
+    .font-100 {
+        font-size: 30px;
+    }
+    .font-85 {
+        font-size: 30px;
+    }
+    .font-83 {
+        font-size: 30px;
+    }
+    .font-56 {
+        font-size: 30px;
+    }
+    .font-47 {
+        font-size: 25px;
+    }
+    .font-43 {
+        font-size: 22px;
+    }
+    .font-42 {
+        font-size: 22px;
+    }
+    .font-40 {
+        font-size: 18px;
+    }
+    .font-33 {
+        font-size: 18px;
+    }
+    .font-32 {
+        font-size: 18px;
+    }
+    .go-with-us, .hero-section, .subscribe {
+        min-height: 40vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pt-111 {
+        padding-top: 40px;
+    }
+    .pt-68 {
+        padding-top: 30px;
+    }
+    .pt-md-80 {
+        padding-top: 80px;
+    }
+    .pt-90 {
+        padding-top: 50px;
+    }
+    .pl-150{
+        padding-left: 30px;
+    }
+    .px-23 {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    .btn-secondary{
+        padding: 14px 25px;
+    }
+
+    .footer{
+        height: unset;
+        padding: 30px 0;
+    }
+    
+    .link-social{
+        padding: 10px;
+    }
+    section, footer {
+        padding: 40px 0;
+    }
+}
+@media screen and (max-width: 575px) {
+    .col-sm-12{
+        width: 100%;
+    }
+    .col-sm-11{
+        width: 91.66%;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-sm-5{
+        width: 41.6%;
+    }
+    .flex-sm-col{
+        flex-direction: column;
+    }
+    .flex-sm-wrap{
+        flex-wrap: wrap;
+    }
+    .gap-sm-25{
+        gap: 25px;
+    }
+    .btn-grp input{
+        border-radius: 43px;
+    }
+    .align-center-sm{
+        align-items: center;
+    }
+    .mx-auto-sm{
+        margin: 0 auto;
+    }
+    .text-center-sm{
+        text-align: center;
+    }   
+    .pt-129 {
+        padding-top: 30px;
+    }
+    .pt-111 {
+        padding-top: 30px;
+    } 
+    .pt-90 {
+        padding-top: 30px;
+    }
+    .pt-68 {
+        padding-top: 15px;
+    }
+    .pb-97 {
+        padding-bottom: 15px;
+    }
+    .pb-84 {
+        padding-bottom: 15px;
+    }
+    .pb-82 {
+        padding-bottom: 40px;
+    }
+    .pb-77 {
+        padding-bottom: 15px;
+    }
+    .pb-72 {
+        padding-bottom: 15px;
+    }
+    .gap-180 {
+        gap: 30px;
+    }
+    .gap-126 {
+        gap: 30px;
+    }
+    .gap-50 {
+        gap: 30px;
+    }
+    .gap-lg-50 {
+        gap: 35px;
+    }
+    .gap-26{
+        gap: 15px;
+    }
+    .font-104 {
+        font-size: 25px;
+    }
+    .font-85 {
+        font-size: 25px;
+    }
+    .font-83 {
+        font-size: 25px;
+    }  
+    .font-56 {
+        font-size: 18px;
+    }
+    .font-47 {
+        font-size: 20px;
+    }
+    .font-43 {
+        font-size: 16px;
+    }
+    .font-42 {
+        font-size: 20px;
+    }
+    .font-40 {
+        font-size: 15px;
+    }
+    .font-37 {
+        font-size: 17px;
+    }
+    .font-34 {
+        font-size: 15px;
+    }
+    .font-33 {
+        font-size: 15px;
+    }
+    .font-32 {
+        font-size: 16px;
+    }
+    .font-22 {
+        font-size: 16px;
+    }
+    .hero-section{
+        background: var(--secondary);
+    }
+    .go-with-us, .hero-section, .subscribe {
+        min-height: 30vh;
+    }
+    section, footer {
+        padding: 30px 0;
+    }
+    .font-100 {
+        font-size: 18px;
+    }
+    .gap-170 {
+        gap: 30px;
+    }
+    .btn-primary {
+        padding: 5px 10px;
+    }
+    .btn-secondary{
+        margin-left: unset;
+    }
+    .link-social {
+        padding: 5px;
+    }
+    .fa-brands{
+        font-size: 27px;
+    }
+    .count-1{
+        width: 120px;
+        height: 120px;
+    }
+}
